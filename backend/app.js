@@ -31,6 +31,11 @@ app.use(
     tempFileDir: "/tmp/",
   })
 );
+
+app.use("/",(req,res)=>{
+  res.json({message:"express sever"});
+});
+
 app.use("/api/v1/message", messageRouter);
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/appointment", appointmentRouter);
