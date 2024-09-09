@@ -11,7 +11,7 @@ import appointmentRouter from "./router/appointmentRouter.js";
 
 const app = express();
 // config({ path: "./config/config.env" });
-config();
+// config();
 
 app.use(
   cors({
