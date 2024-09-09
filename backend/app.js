@@ -32,7 +32,7 @@ app.use(
   })
 );
 
-app.use("/",(req,res)=>({
+app.use("/",(req,res)=>{
   res.json({message:"express server"});
   });
 
