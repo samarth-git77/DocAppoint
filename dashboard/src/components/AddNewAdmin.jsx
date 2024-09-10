@@ -23,7 +23,7 @@ const AddNewAdmin = () => {
     try {
       await axios
         .post(
-          "https://docappoint-api.onrender.com/api/v1/user/admin/addnew",
+          "https://doc-appoint-api.vercel.app/api/v1/user/admin/addnew",
           { firstName, lastName, email, phone, nic, dob, gender, password },
           {
             withCredentials: true,
