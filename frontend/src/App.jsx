@@ -20,7 +20,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://docappoint-api.onrender.com/api/v1/user/patient/me",
+          "https://doc-appoint-api.vercel.app/api/v1/user/patient/me",
           {
             withCredentials: true,
           }
