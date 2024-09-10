@@ -11,7 +11,7 @@ const Messages = () => {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          "https://docappoint-api.onrender.com/api/v1/message/getall",
+          "https://doc-appoint-api.vercel.app/api/v1/message/getall",
           { withCredentials: true }
         );
         setMessages(data.messages);
