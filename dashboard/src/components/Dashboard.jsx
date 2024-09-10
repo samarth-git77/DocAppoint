@@ -13,7 +13,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "https://docappoint-api.onrender.com/api/v1/appointment/getall",
+          "https://doc-appoint-api.vercel.app/api/v1/appointment/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
@@ -27,7 +27,7 @@ const Dashboard = () => {
   const handleUpdateStatus = async (appointmentId, status) => {
     try {
       const { data } = await axios.put(
-        `https://docappoint-api.onrender.com/api/v1/appointment/update/${appointmentId}`,
+        `https://doc-appoint-api.vercel.app/api/v1/appointment/update/${appointmentId}`,
         { status },
         { withCredentials: true }
       );
