@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   const handleLogout = async () => {
     await axios
-      .get("https://docappoint-api.onrender.com/api/v1/user/admin/logout", {
+      .get("https://doc-appoint-api.vercel.app/api/v1/user/admin/logout", {
         withCredentials: true,
       })
       .then((res) => {
